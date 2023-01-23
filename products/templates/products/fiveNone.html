@@ -13,20 +13,63 @@
     <title></title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="{%static  'css/main.css'%}">
+    <link rel="stylesheet" type="text/css" href="{% static '/css/meyawo1.css'%}">
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
-    <div class="products">
+    <!-- Page Navbar -->
+    <nav class="custom-navbar affix-top bg-nav" data-spy="affix" data-offset-top="20" style="">
+        <div class="container ">
+            <a class="logo" href="{%url 'home'%}">Fleeky Curtains</a>
+            <ul class="nav">
+                <li class="item">
+                    <a class="link" href="{%url 'home'%}">Home</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="{%url 'products'%}">Products</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="{%url 'log_in'%}">Login</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#contact">Contact</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#testmonial">About</a>
+                </li>
+                <li class="item">
+                    <div class="dropdown d-inline-block">
+                        <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Cart
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Item 1</a>
+                            <a class="dropdown-item" href="#">Item 2</a>
+                            <a class="dropdown-item" href="#">Item 2</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <a href="javascript:void(0)" id="nav-toggle" class="hamburger hamburger--elastic">
+                <div class="hamburger-box">
+                    <div class="hamburger-inner"></div>
+                </div>
+            </a>
+        </div>
+    </nav><!-- End of Page Navbar -->
+
+    <div class="products mt-5">
         <div class="container">
             <h1 class="lg-title">5in1 Katrina</h1>
             <p class="text-light">100% locally made </p>
             <div class="navbartxt text-center">
-                <a href="{%url 'products'%}" class="btn btn-outline-dark active">Products</a>
+                <a href="{%url 'products'%}" class="btn btn-outline-dark">Products</a>
                 <a href="{%url 'blockout'%}" class="btn btn-outline-dark">Blockout</a>
-                <a href="{%url 'fiveNone'%}" class="btn btn-outline-dark"> 5-in-1 Katrina</a>
+                <a href="{%url 'fiveNone'%}" class="btn btn-outline-dark active"> 5-in-1 Katrina</a>
                 <a href="{%url 'threeNone'%}" class="btn btn-outline-dark"> 3-in-1 Katrina</a>
                 <a href="{%url 'tieback'%}" class="btn btn-outline-dark"> Tieback Holder</a>
             </div>
@@ -286,6 +329,20 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
+
+        <!-- core  -->
+    <script src="{%static '/vendors/jquery/jquery-3.4.1.js'%}"></script>
+    <script src="{%static '/vendors/bootstrap/bootstrap.bundle.js'%}"></script>
+    
+    <!-- bootstrap 3 affix -->
+    <script src="{%static '/vendors/bootstrap/bootstrap.affix.js'%}"></script>
+
+    <!-- Meyawo js -->
+    <script src="{% static '/js/meyawo.js'%}"></script>
+
+    <!--JS Bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
 
 </body>
 
