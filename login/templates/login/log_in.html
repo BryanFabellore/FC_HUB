@@ -22,16 +22,13 @@
     <!-- Page Navbar -->
     <nav class="custom-navbar affix-top" data-spy="affix" data-offset-top="20">
         <div class="container">
-            <a class="logo" href="{%url 'home'%}">Fleeky Curtains</a>         
+            <a class="logo" href="#">Fleeky Curtains</a>         
             <ul class="nav">
                 <li class="item">
                     <a class="link" href="{%url 'home'%}">Home</a>
                 </li>
                 <li class="item">
-                    <a class="link" href="#portfolio">All Products</a>
-                </li>
-                <li class="item">
-                    <a class="link" href="#testmonial">About</a>
+                    <a class="link" href="{%url 'products'%}">All Products</a>
                 </li>
             </ul>
             <a href="javascript:void(0)" id="nav-toggle" class="hamburger hamburger--elastic">
@@ -43,7 +40,7 @@
     </nav><!-- End of Page Navbar -->
 
     <!-- page header -->
-    <header id="home" class="header">   
+    <header id="home" class="header_login">   
         <div class="overlay"></div>
         <div class="header-content container">
             <h1 class="header-title">
@@ -57,10 +54,11 @@
     </header><!-- end of page header -->
 	
     <!-- login page -->
-    <section class="section" id="contact">
-         <p>&nbspLogin</p>
-
-         <form class="px-4 py-3">
+    <section class="section_login">
+         
+         <div class="login">
+            <p>Login</p>
+        
             <div class="form-group">
                <input type="email" class="form-control" placeholder="Email Address">
             </div>
@@ -78,6 +76,7 @@
          <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="{%url 'signup'%}"><small>New around here? Sign up</small></a>
             <a class="dropdown-item" href="#"><small>Forgot password?</small></a>
+        </div>
 
     </section> <!-- end of login page -->
 
