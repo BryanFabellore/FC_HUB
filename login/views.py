@@ -5,12 +5,15 @@ from django.template import loader
 from django.db import models
 from accounts.models import user_acc
 from .forms import user_accForm
+from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth.views import LoginView
 # Create your views here.
 
 
-
-class LogView(TemplateView):
+class LoginInterfaceView(LoginView):
     template_name = 'login/log_in.html'
+    
+
 
 
 class UserCreateView(CreateView):
