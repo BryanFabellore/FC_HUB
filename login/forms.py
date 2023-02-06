@@ -1,4 +1,6 @@
 from django import forms 
+from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth.models import User
 from accounts.models import user_acc
 
 class user_accForm(forms.ModelForm):
@@ -24,7 +26,7 @@ class user_accForm(forms.ModelForm):
             #Account configs
             'usr_username' : forms.TextInput(attrs={'class':"form-control form-control-lg"}),
             'usr_password' : forms.PasswordInput(attrs={'class':"form-control form-control-lg"}),
-        
+           
         }
 
 
